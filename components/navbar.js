@@ -22,7 +22,7 @@ export default function Navbar() {
 
 function NavbarItem({ label }) {
   return (
-    <div className="px-4 font-raleway font-light text-sx	tracking-[.35em]">
+    <div className="px-4 font-raleway font-light text-xs	tracking-[.35em] hover:text-blue-500	cursor-pointer">
       {label}
     </div>
   );
