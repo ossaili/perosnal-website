@@ -16,11 +16,16 @@ module.exports = {
     plugin(function ({ addBase, theme }) {
       addBase({
         h1: {
-          fontSize: theme('fontSize.3xl'),
+          fontSize: theme('fontSize.xl'),
           fontFamily: theme('fontFamily.raleway'),
+          fontWeight: 'bold',
+          letterSpacing: '0.3rem',
         },
-        h2: { fontSize: theme('fontSize.xl') },
-        h3: { fontSize: theme('fontSize.lg') },
+        p: {
+          fontSize: theme('fontSize.md'),
+          fontFamily: theme('fontFamily.raleway'),
+          fontWeight: '300',
+        },
       });
     }),
   ],

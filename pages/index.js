@@ -3,8 +3,8 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className="flex">
-      <div>
+    <div className="flex flex-col xl:flex-row">
+      <section className="w-80 mr-16">
         <div className="font-raleway text-2xl font-extrabold 	text-zinc-800	 tracking tracking-[.25em] pb-4">
           SHADI OSSAILI
         </div>
@@ -18,11 +18,17 @@ export default function Home() {
         >
           shadi.s.ossaili@gmail.com
         </div>
-      </div>
-      <div className="bg-white grow border">
+      </section>
+      <div className="bg-white  border w-full">
         <div className="px-16 py-8">
-          <h1>ABOUT THIS WEB SITE</h1>
+          <h1 className="text-[#3c3b3b]">ABOUT THIS SITE</h1>
         </div>
+        <hr />
+        <p className="px-16 py-8">
+          Welcome to my website. Please feel free to read more about me, or you
+          can check out my resume, projects, view site statistics, or contact
+          me.
+        </p>
       </div>
     </div>
   );
