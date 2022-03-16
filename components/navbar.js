@@ -7,17 +7,23 @@ export default function Navbar() {
         </div>
       </div>
 
-      <div className="grid grid-cols-5 gap-0">
-        <NavbarItem label="ABOUT" />
-        <NavbarItem label="RESUME" />
-        <NavbarItem label="PROJECTS" />
-        <NavbarItem label="STATS" />
-        <NavbarItem label="CONTACT" />
+      <div className="flex ">
+        <div className="my-auto flex divide-x  m-4">
+          <NavbarItem label="ABOUT" />
+          <NavbarItem label="RESUME" />
+          <NavbarItem label="PROJECTS" />
+          <NavbarItem label="STATS" />
+          <NavbarItem label="CONTACT" />
+        </div>
       </div>
     </div>
   );
 }
 
 function NavbarItem({ label }) {
-  return <div>{label}</div>;
+  return (
+    <div className="px-4 font-raleway font-light text-sx	tracking-[.35em]">
+      {label}
+    </div>
+  );
 }
